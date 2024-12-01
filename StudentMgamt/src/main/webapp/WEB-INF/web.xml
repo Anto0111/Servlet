@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>StudentMgamt</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+   <servlet>
+  <servlet-name>readstudent</servlet-name>
+  <servlet-class>ReadStudent</servlet-class>
+  </servlet>
+   
+   <servlet-mapping>
+   <servlet-name>readstudent</servlet-name>
+   <url-pattern>/readstudent</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+  <servlet-name>createstudent</servlet-name>
+  <servlet-class>CreateStudent</servlet-class>
+  </servlet>
+   
+   <servlet-mapping>
+   <servlet-name>createstudent</servlet-name>
+   <url-pattern>/createstudent</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+  <servlet-name>updatestudent</servlet-name>
+  <servlet-class>UpadateStudent</servlet-class>
+  </servlet>
+   
+   <servlet-mapping>
+   <servlet-name>updatestudent</servlet-name>
+   <url-pattern>/updatestudent</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+  <servlet-name>deletestudent</servlet-name>
+  <servlet-class>DeleteStudent</servlet-class>
+  </servlet>
+   
+   <servlet-mapping>
+   <servlet-name>deletestudent</servlet-name>
+   <url-pattern>/deletestudent</url-pattern>
+   </servlet-mapping>
+   
+</web-app>
